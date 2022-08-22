@@ -12,7 +12,7 @@ using UnityEngine.SceneManagement;
 using UnityEditor;
 using UnityEditor.Build.Reporting;
 
-namespace Visualization.Build
+namespace PrawnEntertainment.Build
 {
     public class BehaviourBuild : MonoBehaviour
     {
