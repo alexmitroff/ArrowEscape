@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 5892353987946813913}
   - component: {fileID: 162556641449239230}
   - component: {fileID: 723228700159778786}
-  - component: {fileID: -6732018124857554110}
+  - component: {fileID: 1731240959388337629}
   m_Layer: 0
-  m_Name: PF_AvailablePosition
+  m_Name: PF_Checkpoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -84,7 +84,7 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!135 &-6732018124857554110
+--- !u!135 &1731240959388337629
 SphereCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

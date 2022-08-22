@@ -7,7 +7,7 @@ using System;
 using UnityEngine;
 
 
-namespace Visualization.Build
+namespace PrawnEntertainment.Build
 {
     /// <summary>
     /// GitException includes the error output from a Git.Run() command as well as the

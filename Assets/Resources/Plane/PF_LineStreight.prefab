@@ -11,10 +11,9 @@ GameObject:
   - component: {fileID: 5892353987946813913}
   - component: {fileID: 162556641449239230}
   - component: {fileID: 723228700159778786}
-  - component: {fileID: -6732018124857554110}
   m_Layer: 0
-  m_Name: PF_AvailablePosition
-  m_TagString: Untagged
+  m_Name: PF_LineStreight
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -62,7 +61,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a2ed7b612f9245c40a08ace8fa7d6ff0, type: 2}
+  - {fileID: 2100000, guid: 2b3149b8388bb5e4584d0c6db8efd86e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -84,16 +83,3 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!135 &-6732018124857554110
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2055631487603379879}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 2.5
-  m_Center: {x: 0, y: 0, z: 0}

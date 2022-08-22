@@ -1,7 +1,7 @@
 using System.Diagnostics;
 using System.Text;
 
-namespace Visualization.Build
+namespace PrawnEntertainment.Build
 {
     public static class ProcessExtensions
     {
@@ -16,7 +16,7 @@ namespace Visualization.Build
         /// Note that if any deadlocks occur, read the above thread (cubrman's response).
         /// </summary>
         /// <remarks>
-        /// This should be run from a using block and disposed after use. It won't 
+        /// This should be run from a using block and disposed after use. It won't
         /// work properly to keep it around.
         /// </remarks>
         public static int Run(this Process process, string application,
