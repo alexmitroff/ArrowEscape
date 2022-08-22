@@ -1,0 +1,16 @@
+{
+    "name": "PE.ArrowEscape",
+    "rootNamespace": "",
+    "references": [
+        "GUID:8c1b5e158961445498f8a66188fbb2e3"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
