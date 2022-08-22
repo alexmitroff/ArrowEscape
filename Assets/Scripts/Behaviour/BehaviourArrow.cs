@@ -4,12 +4,25 @@ using UnityEngine;
 
 namespace PrawnEntertainment.Behaviour
 {
-    public class BehaviourHide : MonoBehaviour
+    public class BehaviourArrow : MonoBehaviour
     {
         public Transform OnLeft;
         public Transform OnForward;
         public Transform OnRight;
 
+        public void SetForward(Transform transform)
+        {
+            OnForward = transform;
+        }
 
+        public void SetLeft(Transform transform)
+        {
+            OnLeft = transform;
+        }
+
+        public void SetRight(Transform transform)
+        {
+            OnRight = transform;
+        }
     }
 }

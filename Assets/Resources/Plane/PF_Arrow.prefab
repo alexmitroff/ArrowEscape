@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 8255950064479557603}
   - component: {fileID: 8106475740441313710}
   - component: {fileID: 260249923342257586}
+  - component: {fileID: 1463844986206514684}
+  - component: {fileID: 3532877674476138199}
   m_Layer: 0
   m_Name: FWStright
   m_TagString: Untagged
@@ -97,6 +99,35 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1463844986206514684
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 873530219250026526}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0c12c78c15528b49a3914456688fe34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PossibleNextMoveEvent: {fileID: 11400000, guid: 9b38e82734413e0489dfc6cd39b785e1, type: 2}
+--- !u!54 &3532877674476138199
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 873530219250026526}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1595812684253008034
 GameObject:
   m_ObjectHideFlags: 0
@@ -109,6 +140,8 @@ GameObject:
   - component: {fileID: 4857128234330625835}
   - component: {fileID: 6941855287231494876}
   - component: {fileID: 5900278316500242310}
+  - component: {fileID: 3495420242425486485}
+  - component: {fileID: 7721583627231741562}
   m_Layer: 0
   m_Name: RDown
   m_TagString: Untagged
@@ -194,6 +227,35 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &3495420242425486485
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1595812684253008034}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0c12c78c15528b49a3914456688fe34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PossibleNextMoveEvent: {fileID: 11400000, guid: 4f262e530bb407540a0c9384c9dba69f, type: 2}
+--- !u!54 &7721583627231741562
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1595812684253008034}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1763039154375242856
 GameObject:
   m_ObjectHideFlags: 0
@@ -206,6 +268,8 @@ GameObject:
   - component: {fileID: 2386143038867762}
   - component: {fileID: 1876123432411191735}
   - component: {fileID: 1458331125373201730}
+  - component: {fileID: 5329581390484900186}
+  - component: {fileID: 2121073199102006537}
   m_Layer: 0
   m_Name: LStright
   m_TagString: Untagged
@@ -291,6 +355,35 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &5329581390484900186
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1763039154375242856}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0c12c78c15528b49a3914456688fe34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PossibleNextMoveEvent: {fileID: 11400000, guid: 0c9f32807dd6b3844980086b5afce2b1, type: 2}
+--- !u!54 &2121073199102006537
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1763039154375242856}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1838568341767598780
 GameObject:
   m_ObjectHideFlags: 0
@@ -303,6 +396,8 @@ GameObject:
   - component: {fileID: 1307901071384812082}
   - component: {fileID: 7401100320624626310}
   - component: {fileID: 4869782614099495990}
+  - component: {fileID: 7221990420827586828}
+  - component: {fileID: 2154714174444348868}
   m_Layer: 0
   m_Name: FWUp
   m_TagString: Untagged
@@ -388,6 +483,35 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &7221990420827586828
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1838568341767598780}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0c12c78c15528b49a3914456688fe34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PossibleNextMoveEvent: {fileID: 11400000, guid: 20f062dbf16986a4daa1f58e8357d1b5, type: 2}
+--- !u!54 &2154714174444348868
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1838568341767598780}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &2055631487603379879
 GameObject:
   m_ObjectHideFlags: 0
@@ -399,6 +523,16 @@ GameObject:
   - component: {fileID: 5892353987946813913}
   - component: {fileID: 162556641449239230}
   - component: {fileID: 723228700159778786}
+  - component: {fileID: 3409484215422502687}
+  - component: {fileID: 2615364248369876631}
+  - component: {fileID: 8683285603785346500}
+  - component: {fileID: 5491230058520900802}
+  - component: {fileID: 8256163785374651979}
+  - component: {fileID: 5252753898001316876}
+  - component: {fileID: 6780280017282135199}
+  - component: {fileID: 1608837790539130924}
+  - component: {fileID: 4310859083708469013}
+  - component: {fileID: 5560514245623309605}
   m_Layer: 0
   m_Name: PF_Arrow
   m_TagString: Player
@@ -480,6 +614,273 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &3409484215422502687
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2055631487603379879}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef2b28e5eb0276546b0391393300f7d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnLeft: {fileID: 0}
+  OnForward: {fileID: 0}
+  OnRight: {fileID: 0}
+--- !u!114 &2615364248369876631
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2055631487603379879}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5de421b9e2e7664ab49a4e14fee532b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event: {fileID: 11400000, guid: 4053561fd524a3c49869f5a32daf893d, type: 2}
+  Response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 3409484215422502687}
+        m_TargetAssemblyTypeName: PrawnEntertainment.Behaviour.BehaviourArrow, PE.ArrowEscape
+        m_MethodName: SetForward
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &8683285603785346500
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2055631487603379879}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5de421b9e2e7664ab49a4e14fee532b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event: {fileID: 11400000, guid: 9b38e82734413e0489dfc6cd39b785e1, type: 2}
+  Response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 3409484215422502687}
+        m_TargetAssemblyTypeName: PrawnEntertainment.Behaviour.BehaviourArrow, PE.ArrowEscape
+        m_MethodName: SetForward
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &5491230058520900802
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2055631487603379879}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5de421b9e2e7664ab49a4e14fee532b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event: {fileID: 11400000, guid: 20f062dbf16986a4daa1f58e8357d1b5, type: 2}
+  Response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 3409484215422502687}
+        m_TargetAssemblyTypeName: PrawnEntertainment.Behaviour.BehaviourArrow, PE.ArrowEscape
+        m_MethodName: SetForward
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &8256163785374651979
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2055631487603379879}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5de421b9e2e7664ab49a4e14fee532b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event: {fileID: 11400000, guid: 10b86c2ff0341394c86f4a72baaa5951, type: 2}
+  Response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 3409484215422502687}
+        m_TargetAssemblyTypeName: PrawnEntertainment.Behaviour.BehaviourArrow, PE.ArrowEscape
+        m_MethodName: SetLeft
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &5252753898001316876
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2055631487603379879}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5de421b9e2e7664ab49a4e14fee532b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event: {fileID: 11400000, guid: 0c9f32807dd6b3844980086b5afce2b1, type: 2}
+  Response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 3409484215422502687}
+        m_TargetAssemblyTypeName: PrawnEntertainment.Behaviour.BehaviourArrow, PE.ArrowEscape
+        m_MethodName: SetLeft
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &6780280017282135199
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2055631487603379879}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5de421b9e2e7664ab49a4e14fee532b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event: {fileID: 11400000, guid: b81f92dc4644430449fa227a4fdf8e92, type: 2}
+  Response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 3409484215422502687}
+        m_TargetAssemblyTypeName: PrawnEntertainment.Behaviour.BehaviourArrow, PE.ArrowEscape
+        m_MethodName: SetLeft
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1608837790539130924
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2055631487603379879}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5de421b9e2e7664ab49a4e14fee532b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event: {fileID: 11400000, guid: 4f262e530bb407540a0c9384c9dba69f, type: 2}
+  Response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 3409484215422502687}
+        m_TargetAssemblyTypeName: PrawnEntertainment.Behaviour.BehaviourArrow, PE.ArrowEscape
+        m_MethodName: SetRight
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &4310859083708469013
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2055631487603379879}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5de421b9e2e7664ab49a4e14fee532b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event: {fileID: 11400000, guid: 35a0f2b13a825d14b85650a17fb14ab4, type: 2}
+  Response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 3409484215422502687}
+        m_TargetAssemblyTypeName: PrawnEntertainment.Behaviour.BehaviourArrow, PE.ArrowEscape
+        m_MethodName: SetRight
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &5560514245623309605
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2055631487603379879}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5de421b9e2e7664ab49a4e14fee532b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event: {fileID: 11400000, guid: f1952d4d81f8f7f4eba6192626448591, type: 2}
+  Response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 3409484215422502687}
+        m_TargetAssemblyTypeName: PrawnEntertainment.Behaviour.BehaviourArrow, PE.ArrowEscape
+        m_MethodName: SetRight
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &4915837652273169181
 GameObject:
   m_ObjectHideFlags: 0
@@ -492,6 +893,8 @@ GameObject:
   - component: {fileID: 6494647834748636409}
   - component: {fileID: 3950243785622689755}
   - component: {fileID: 7220688095146149355}
+  - component: {fileID: 3175162517214547935}
+  - component: {fileID: 4389480242885464}
   m_Layer: 0
   m_Name: LUp
   m_TagString: Untagged
@@ -577,6 +980,35 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &3175162517214547935
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4915837652273169181}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0c12c78c15528b49a3914456688fe34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PossibleNextMoveEvent: {fileID: 11400000, guid: b81f92dc4644430449fa227a4fdf8e92, type: 2}
+--- !u!54 &4389480242885464
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4915837652273169181}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &5202148363596936381
 GameObject:
   m_ObjectHideFlags: 0
@@ -589,6 +1021,8 @@ GameObject:
   - component: {fileID: 7277030072248386229}
   - component: {fileID: 3685903785442049570}
   - component: {fileID: 4816693211726119152}
+  - component: {fileID: 3749774833168619431}
+  - component: {fileID: 3143854725221846210}
   m_Layer: 0
   m_Name: FWDown
   m_TagString: Untagged
@@ -674,6 +1108,35 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &3749774833168619431
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5202148363596936381}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0c12c78c15528b49a3914456688fe34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PossibleNextMoveEvent: {fileID: 11400000, guid: 4053561fd524a3c49869f5a32daf893d, type: 2}
+--- !u!54 &3143854725221846210
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5202148363596936381}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &7726334431447775462
 GameObject:
   m_ObjectHideFlags: 0
@@ -686,6 +1149,8 @@ GameObject:
   - component: {fileID: 5889259021259250809}
   - component: {fileID: 6259255016094408392}
   - component: {fileID: 4004039739575265714}
+  - component: {fileID: 6915271650375564222}
+  - component: {fileID: 2243725817247250843}
   m_Layer: 0
   m_Name: RStright
   m_TagString: Untagged
@@ -771,6 +1236,35 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &6915271650375564222
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7726334431447775462}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0c12c78c15528b49a3914456688fe34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PossibleNextMoveEvent: {fileID: 11400000, guid: 35a0f2b13a825d14b85650a17fb14ab4, type: 2}
+--- !u!54 &2243725817247250843
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7726334431447775462}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &8632888455331736994
 GameObject:
   m_ObjectHideFlags: 0
@@ -783,6 +1277,8 @@ GameObject:
   - component: {fileID: 2187354751903897242}
   - component: {fileID: 9054668766235489744}
   - component: {fileID: 3173652818925784369}
+  - component: {fileID: 7847884306735703468}
+  - component: {fileID: 7181247968805159003}
   m_Layer: 0
   m_Name: LDown
   m_TagString: Untagged
@@ -868,6 +1364,35 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &7847884306735703468
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8632888455331736994}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0c12c78c15528b49a3914456688fe34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PossibleNextMoveEvent: {fileID: 11400000, guid: 10b86c2ff0341394c86f4a72baaa5951, type: 2}
+--- !u!54 &7181247968805159003
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8632888455331736994}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &8914155758326424846
 GameObject:
   m_ObjectHideFlags: 0
@@ -880,6 +1405,8 @@ GameObject:
   - component: {fileID: 972116611008546460}
   - component: {fileID: 8109516842643057668}
   - component: {fileID: 5900777859950949813}
+  - component: {fileID: 2199625853703455319}
+  - component: {fileID: 1504106549017807018}
   m_Layer: 0
   m_Name: RUp
   m_TagString: Untagged
@@ -965,3 +1492,32 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &2199625853703455319
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8914155758326424846}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0c12c78c15528b49a3914456688fe34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PossibleNextMoveEvent: {fileID: 11400000, guid: f1952d4d81f8f7f4eba6192626448591, type: 2}
+--- !u!54 &1504106549017807018
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8914155758326424846}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
