@@ -627,9 +627,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef2b28e5eb0276546b0391393300f7d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  OnLeft: {fileID: 0}
-  OnForward: {fileID: 0}
-  OnRight: {fileID: 0}
+  LeftMove: {fileID: 0}
+  ForwardMove: {fileID: 0}
+  RightMove: {fileID: 0}
+  PrefabTurnLeft: {fileID: 2055631487603379879, guid: 79c69be109319e14da466b49101e849f, type: 3}
+  PrefabTurnRight: {fileID: 2055631487603379879, guid: 4bf0a22c595f1e844a7d0134d5fd03bf, type: 3}
+  PrefabStright: {fileID: 2055631487603379879, guid: 91e23f1a1fee32e4287ea2668c24cc44, type: 3}
 --- !u!114 &2615364248369876631
 MonoBehaviour:
   m_ObjectHideFlags: 0
