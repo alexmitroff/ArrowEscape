@@ -8,15 +8,22 @@ namespace PrawnEntertainment.Behaviour
     {
         [Header("Events")]
         public SO_SimpleEvent LoadNextLevel;
+        public SO_SimpleEvent ReloadLevel;
+        public SO_StringEvent HUDMessage;
         int _CheckpointCount;
         bool _IsEndWasReached;
+        bool _WereAllCheckpointsPassed;
         void Start()
         {
             _IsEndWasReached = false;
+            _WereAllCheckpointsPassed = true;
             _CheckpointCount = 0;
             GameObject[] Checkpoints = GameObject.FindGameObjectsWithTag("Checkpoint");
             if (Checkpoints != null)
+            {
+                _WereAllCheckpointsPassed = false;
                 _CheckpointCount = Checkpoints.Length;
+            }
         }
 
         public void PlayerPassedAChechpoint()
@@ -28,20 +35,26 @@ namespace PrawnEntertainment.Behaviour
             }
             Debug.Log("Checkpoint was passed.");
             _CheckpointCount--;
+            _WereAllCheckpointsPassed = _CheckpointCount == 0;
         }
 
         public void PlayerReachedAnExit()
         {
             _IsEndWasReached = true;
-            if (_CheckpointCount == 0)
+            if (_WereAllCheckpointsPassed)
             {
                 Debug.Log("The end was reached!");
-                Debug.Log("Loading a next level!");
-                LoadNextLevel.Raise();
+                HUDMessage.Raise("Press [SPACE] to load next level");
             } else {
                 Debug.Log("You need to pass through all checkpoints");
+                HUDMessage.Raise("You need to pass through all checkpoints.\n Press [SPACE] to restart level");
             }
         }
 
+        public void OnAction()
+        {
+            if ( _IsEndWasReached && _WereAllCheckpointsPassed ) LoadNextLevel.Raise();
+            if ( _IsEndWasReached && !_WereAllCheckpointsPassed ) ReloadLevel.Raise();
+        }
     }
 }
