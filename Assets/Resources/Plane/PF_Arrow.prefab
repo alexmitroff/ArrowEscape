@@ -127,7 +127,7 @@ Rigidbody:
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
 --- !u!1 &1595812684253008034
 GameObject:
   m_ObjectHideFlags: 0
@@ -255,7 +255,7 @@ Rigidbody:
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
 --- !u!1 &1763039154375242856
 GameObject:
   m_ObjectHideFlags: 0
@@ -383,7 +383,7 @@ Rigidbody:
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
 --- !u!1 &1838568341767598780
 GameObject:
   m_ObjectHideFlags: 0
@@ -511,7 +511,7 @@ Rigidbody:
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
 --- !u!1 &2055631487603379879
 GameObject:
   m_ObjectHideFlags: 0
@@ -627,9 +627,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef2b28e5eb0276546b0391393300f7d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  LeftUpMove: {fileID: 0}
   LeftMove: {fileID: 0}
+  LeftDownMove: {fileID: 0}
+  ForwardUpMove: {fileID: 0}
   ForwardMove: {fileID: 0}
+  ForwardDownMove: {fileID: 0}
+  RightUpMove: {fileID: 0}
   RightMove: {fileID: 0}
+  RightDownMove: {fileID: 0}
   PrefabTurnLeft: {fileID: 2055631487603379879, guid: 79c69be109319e14da466b49101e849f, type: 3}
   PrefabTurnRight: {fileID: 2055631487603379879, guid: 4bf0a22c595f1e844a7d0134d5fd03bf, type: 3}
   PrefabStright: {fileID: 2055631487603379879, guid: 91e23f1a1fee32e4287ea2668c24cc44, type: 3}
@@ -651,7 +657,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 3409484215422502687}
         m_TargetAssemblyTypeName: PrawnEntertainment.Behaviour.BehaviourArrow, PE.ArrowEscape
-        m_MethodName: SetForward
+        m_MethodName: SetForwardDown
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -707,7 +713,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 3409484215422502687}
         m_TargetAssemblyTypeName: PrawnEntertainment.Behaviour.BehaviourArrow, PE.ArrowEscape
-        m_MethodName: SetForward
+        m_MethodName: SetForwardUp
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -735,7 +741,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 3409484215422502687}
         m_TargetAssemblyTypeName: PrawnEntertainment.Behaviour.BehaviourArrow, PE.ArrowEscape
-        m_MethodName: SetLeft
+        m_MethodName: SetLeftDown
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -791,7 +797,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 3409484215422502687}
         m_TargetAssemblyTypeName: PrawnEntertainment.Behaviour.BehaviourArrow, PE.ArrowEscape
-        m_MethodName: SetLeft
+        m_MethodName: SetLeftUp
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -819,7 +825,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 3409484215422502687}
         m_TargetAssemblyTypeName: PrawnEntertainment.Behaviour.BehaviourArrow, PE.ArrowEscape
-        m_MethodName: SetRight
+        m_MethodName: SetRightDown
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -875,7 +881,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 3409484215422502687}
         m_TargetAssemblyTypeName: PrawnEntertainment.Behaviour.BehaviourArrow, PE.ArrowEscape
-        m_MethodName: SetRight
+        m_MethodName: SetRightUp
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1066,7 +1072,7 @@ Rigidbody:
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
 --- !u!1 &5202148363596936381
 GameObject:
   m_ObjectHideFlags: 0
@@ -1194,7 +1200,7 @@ Rigidbody:
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
 --- !u!1 &7726334431447775462
 GameObject:
   m_ObjectHideFlags: 0
@@ -1322,7 +1328,7 @@ Rigidbody:
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
 --- !u!1 &8632888455331736994
 GameObject:
   m_ObjectHideFlags: 0
@@ -1450,7 +1456,7 @@ Rigidbody:
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
 --- !u!1 &8914155758326424846
 GameObject:
   m_ObjectHideFlags: 0
@@ -1578,4 +1584,4 @@ Rigidbody:
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1

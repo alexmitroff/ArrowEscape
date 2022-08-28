@@ -10,7 +10,7 @@ namespace PrawnEntertainment.Behaviour
     {
         public SO_TransformEvent PossibleNextMoveEvent;
 
-         private void OnTriggerEnter(Collider other)
+        private void OnTriggerStay(Collider other)
         {
             PossibleNextMoveEvent.Raise(other.transform);
         }
