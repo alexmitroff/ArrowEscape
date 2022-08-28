@@ -24,10 +24,21 @@ namespace PrawnEntertainment.Behaviour
             SO_SceneManager.SetActiveScene(scene_name);
         }
 
-        public void ReloadScene(string scene_name)
+        public void RestartLevel()
         {
+            string scene_name = SO_SceneManager.GetActiveSceneName();
             UnloadScene(scene_name);
             LoadScene(scene_name);
+        }
+
+        public void LoadNextLevel()
+        {
+            string scene_name = SO_SceneManager.GetActiveSceneName();
+            if ( scene_name == "TestMovement" )
+            {
+                RestartLevel();
+                return;
+            }
         }
 
     }

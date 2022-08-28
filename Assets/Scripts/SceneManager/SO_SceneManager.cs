@@ -50,6 +50,11 @@ namespace PrawnEntertainment.SceneManagement
         {
             return SceneManager.SetActiveScene(SceneManager.GetSceneByName(scene_name));
         }
+
+        public static string GetActiveSceneName()
+        {
+            return SceneManager.GetActiveScene().name;
+        }
     }
 
 }
