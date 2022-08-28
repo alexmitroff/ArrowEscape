@@ -3,12 +3,16 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Path
+  - Checkpoint
+  - Exit
+  - AvailablePosition
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Playfield
   - Water
   - UI
   - 

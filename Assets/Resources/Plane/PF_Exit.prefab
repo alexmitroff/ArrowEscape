@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 162556641449239230}
   - component: {fileID: 723228700159778786}
   - component: {fileID: 2977087672648079943}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: PF_Exit
-  m_TagString: Player
+  m_TagString: Exit
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

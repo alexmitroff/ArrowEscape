@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 260249923342257586}
   - component: {fileID: 1463844986206514684}
   - component: {fileID: 3532877674476138199}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: FWStright
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -142,7 +142,7 @@ GameObject:
   - component: {fileID: 5900278316500242310}
   - component: {fileID: 3495420242425486485}
   - component: {fileID: 7721583627231741562}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: RDown
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -270,7 +270,7 @@ GameObject:
   - component: {fileID: 1458331125373201730}
   - component: {fileID: 5329581390484900186}
   - component: {fileID: 2121073199102006537}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: LStright
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -398,7 +398,7 @@ GameObject:
   - component: {fileID: 4869782614099495990}
   - component: {fileID: 7221990420827586828}
   - component: {fileID: 2154714174444348868}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: FWUp
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -523,6 +523,7 @@ GameObject:
   - component: {fileID: 5892353987946813913}
   - component: {fileID: 162556641449239230}
   - component: {fileID: 723228700159778786}
+  - component: {fileID: 1244571741584494184}
   - component: {fileID: 3409484215422502687}
   - component: {fileID: 2615364248369876631}
   - component: {fileID: 8683285603785346500}
@@ -533,8 +534,7 @@ GameObject:
   - component: {fileID: 1608837790539130924}
   - component: {fileID: 4310859083708469013}
   - component: {fileID: 5560514245623309605}
-  - component: {fileID: 1244571741584494184}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: PF_Arrow
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -615,6 +615,60 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &1244571741584494184
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2055631487603379879}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Actions: {fileID: -944628639613478452, guid: 7be4c907c2ea2a1458fd6bcb26bd467d, type: 3}
+  m_NotificationBehavior: 0
+  m_UIInputModule: {fileID: 0}
+  m_DeviceLostEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 3409484215422502687}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_DeviceRegainedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ControlsChangedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ActionEvents:
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 09e08d04-bccf-4ac4-ac29-8bf97a7e3439
+    m_ActionName: Keyboard/Forward[/Keyboard/w,/Keyboard/upArrow]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 3e66327e-4486-4c7c-b9d9-08405ff4f19e
+    m_ActionName: Keyboard/Left[/Keyboard/a,/Keyboard/leftArrow]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: b1d86331-c984-499b-b0a2-b891015dad12
+    m_ActionName: Keyboard/Right[/Keyboard/d,/Keyboard/rightArrow]
+  m_NeverAutoSwitchControlSchemes: 0
+  m_DefaultControlScheme: 
+  m_DefaultActionMap: Keyboard
+  m_SplitScreenIndex: -1
+  m_Camera: {fileID: 0}
 --- !u!114 &3409484215422502687
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -891,60 +945,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &1244571741584494184
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2055631487603379879}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Actions: {fileID: -944628639613478452, guid: 7be4c907c2ea2a1458fd6bcb26bd467d, type: 3}
-  m_NotificationBehavior: 0
-  m_UIInputModule: {fileID: 0}
-  m_DeviceLostEvent:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 3409484215422502687}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  m_DeviceRegainedEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_ControlsChangedEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_ActionEvents:
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: 09e08d04-bccf-4ac4-ac29-8bf97a7e3439
-    m_ActionName: Keyboard/Forward[/Keyboard/w,/Keyboard/upArrow]
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: 3e66327e-4486-4c7c-b9d9-08405ff4f19e
-    m_ActionName: Keyboard/Left[/Keyboard/a,/Keyboard/leftArrow]
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: b1d86331-c984-499b-b0a2-b891015dad12
-    m_ActionName: Keyboard/Right[/Keyboard/d,/Keyboard/rightArrow]
-  m_NeverAutoSwitchControlSchemes: 0
-  m_DefaultControlScheme: 
-  m_DefaultActionMap: Keyboard
-  m_SplitScreenIndex: -1
-  m_Camera: {fileID: 0}
 --- !u!1 &4915837652273169181
 GameObject:
   m_ObjectHideFlags: 0
@@ -959,7 +959,7 @@ GameObject:
   - component: {fileID: 7220688095146149355}
   - component: {fileID: 3175162517214547935}
   - component: {fileID: 4389480242885464}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: LUp
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1087,7 +1087,7 @@ GameObject:
   - component: {fileID: 4816693211726119152}
   - component: {fileID: 3749774833168619431}
   - component: {fileID: 3143854725221846210}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: FWDown
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1215,7 +1215,7 @@ GameObject:
   - component: {fileID: 4004039739575265714}
   - component: {fileID: 6915271650375564222}
   - component: {fileID: 2243725817247250843}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: RStright
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1343,7 +1343,7 @@ GameObject:
   - component: {fileID: 3173652818925784369}
   - component: {fileID: 7847884306735703468}
   - component: {fileID: 7181247968805159003}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: LDown
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1471,7 +1471,7 @@ GameObject:
   - component: {fileID: 5900777859950949813}
   - component: {fileID: 2199625853703455319}
   - component: {fileID: 1504106549017807018}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: RUp
   m_TagString: Untagged
   m_Icon: {fileID: 0}
