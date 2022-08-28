@@ -24,5 +24,11 @@ namespace PrawnEntertainment.Behaviour
             SO_SceneManager.SetActiveScene(scene_name);
         }
 
+        public void ReloadScene(string scene_name)
+        {
+            UnloadScene(scene_name);
+            LoadScene(scene_name);
+        }
+
     }
 }

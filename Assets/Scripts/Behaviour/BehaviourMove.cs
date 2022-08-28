@@ -2,9 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+using PrawnEntertainment.Events;
+
 namespace PrawnEntertainment.Behaviour
 {
-    public class BehaviourArrow : MonoBehaviour
+    public class BehaviourMove : MonoBehaviour
     {
         [Header("Move variants")]
         public Transform LeftUpMove;
@@ -23,6 +25,10 @@ namespace PrawnEntertainment.Behaviour
         public GameObject PrefabTurnLeft;
         public GameObject PrefabTurnRight;
         public GameObject PrefabStright;
+
+        [Header("Events")]
+        public SO_SimpleEvent PlayerPassedACheckpoint;
+        public SO_SimpleEvent PlayerReachedAnExit;
 
         private Transform _SelfTranform;
 
@@ -125,14 +131,17 @@ namespace PrawnEntertainment.Behaviour
             _SelfTranform.position = Move.position;
         }
 
-        private void _FaceUpDown(Transform Move)
-        {
-            if (_IsUp(Move)) _TurnUp();
-            else if (_IsDown(Move)) _TurnDown();
-        }
-
         private void _SpawnPlaceholder(Transform Move, GameObject PlaceholderPrefab)
         {
+            switch(Move.gameObject.tag)
+            {
+                case "Checkpoint":
+                    PlayerPassedACheckpoint.Raise();
+                    break;
+                case "Exit":
+                    PlayerReachedAnExit.Raise();
+                    break;
+            }
             Move.gameObject.SetActive(false);
             Instantiate<GameObject>(PlaceholderPrefab, _SelfTranform.position, _SelfTranform.rotation);
         }
@@ -150,37 +159,23 @@ namespace PrawnEntertainment.Behaviour
             RightDownMove = null;
         }
 
-        private bool _IsUp(Transform Move)
-        {
-            return Move.position.y > _SelfTranform.position.y+1;
-        }
-
-        private bool _IsDown(Transform Move)
-        {
-            return Move.position.y < _SelfTranform.position.y-1;
-        }
-
         private void _TurnLeft()
         {
-            Debug.Log($"Up {_SelfTranform.up}");
             _SelfTranform.RotateAround(_SelfTranform.position, _SelfTranform.up, -90);
         }
 
         private void _TurnRight()
         {
-            Debug.Log($"Up {_SelfTranform.up}");
             _SelfTranform.RotateAround(_SelfTranform.position, _SelfTranform.up, 90);
         }
 
         private void _TurnUp()
         {
-            Debug.Log($"Right {_SelfTranform.right}");
             _SelfTranform.RotateAround(_SelfTranform.position, _SelfTranform.right, -90);
         }
 
         private void _TurnDown()
         {
-            Debug.Log($"Right {_SelfTranform.right}");
             _SelfTranform.RotateAround(_SelfTranform.position, _SelfTranform.right, 90);
         }
     }
