@@ -29,6 +29,7 @@ namespace PrawnEntertainment.Behaviour
         [Header("Events")]
         public SO_SimpleEvent PlayerPassedACheckpoint;
         public SO_SimpleEvent PlayerReachedAnExit;
+        public SO_SimpleEvent NoMovesAvailable;
 
         private Transform _SelfTranform;
 
@@ -72,6 +73,7 @@ namespace PrawnEntertainment.Behaviour
                 _MakeAMove(LeftMove);
                 return;
             }
+            if (!_IsNewMovesAvailable()) NoMovesAvailable.Raise();
         }
 
         public void OnForward()
@@ -96,6 +98,7 @@ namespace PrawnEntertainment.Behaviour
                 _MakeAMove(ForwardMove);
                 return;
             }
+            if (!_IsNewMovesAvailable()) NoMovesAvailable.Raise();
         }
 
         public void OnRight()
@@ -123,6 +126,7 @@ namespace PrawnEntertainment.Behaviour
                 _MakeAMove(RightMove);
                 return;
             }
+            if (!_IsNewMovesAvailable()) NoMovesAvailable.Raise();
         }
 
         private void _MakeAMove(Transform Move)
@@ -144,6 +148,19 @@ namespace PrawnEntertainment.Behaviour
             }
             Move.gameObject.SetActive(false);
             Instantiate<GameObject>(PlaceholderPrefab, _SelfTranform.position, _SelfTranform.rotation);
+        }
+
+        private bool _IsNewMovesAvailable()
+        {
+            return LeftUpMove != null ||
+                   LeftMove != null ||
+                   LeftDownMove != null ||
+                   ForwardUpMove != null ||
+                   ForwardMove != null ||
+                   ForwardDownMove != null ||
+                   RightUpMove != null ||
+                   RightMove != null ||
+                   RightDownMove != null;
         }
 
         private void _CleanMoveVariants()

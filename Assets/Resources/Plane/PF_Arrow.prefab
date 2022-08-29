@@ -538,6 +538,7 @@ GameObject:
   - component: {fileID: 5560514245623309605}
   - component: {fileID: -2645501197014123082}
   - component: {fileID: -7213356950785259641}
+  - component: {fileID: 2083956827570648819}
   m_Layer: 3
   m_Name: PF_Arrow
   m_TagString: Player
@@ -727,6 +728,7 @@ MonoBehaviour:
   PrefabStright: {fileID: 2055631487603379879, guid: 91e23f1a1fee32e4287ea2668c24cc44, type: 3}
   PlayerPassedACheckpoint: {fileID: 11400000, guid: e127aac41f26ace4c9871a10206c2fec, type: 2}
   PlayerReachedAnExit: {fileID: 11400000, guid: c13ebb0033dfd7744b011333b1ffabbf, type: 2}
+  NoMovesAvailable: {fileID: 11400000, guid: 733a1c37a7f3ff647b7623bff5a1994e, type: 2}
 --- !u!114 &2615364248369876631
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1026,6 +1028,34 @@ MonoBehaviour:
       - m_Target: {fileID: 4071447414013575263}
         m_TargetAssemblyTypeName: PrawnEntertainment.Behaviour.BehaviourPlayer, PE.ArrowEscape
         m_MethodName: PlayerReachedAnExit
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &2083956827570648819
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2055631487603379879}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3be320c53cf732e419e827e528467d28, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event: {fileID: 11400000, guid: 733a1c37a7f3ff647b7623bff5a1994e, type: 2}
+  Response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 4071447414013575263}
+        m_TargetAssemblyTypeName: PrawnEntertainment.Behaviour.BehaviourPlayer, PE.ArrowEscape
+        m_MethodName: NoMovesAvailable
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

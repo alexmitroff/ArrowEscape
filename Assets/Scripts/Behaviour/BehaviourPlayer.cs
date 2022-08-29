@@ -11,12 +11,14 @@ namespace PrawnEntertainment.Behaviour
         public SO_SimpleEvent ReloadLevel;
         public SO_StringEvent HUDMessage;
         int _CheckpointCount;
+        bool _IsNewMovesAvailable;
         bool _IsEndWasReached;
         bool _WereAllCheckpointsPassed;
         void Start()
         {
             _IsEndWasReached = false;
             _WereAllCheckpointsPassed = true;
+            _IsNewMovesAvailable = true;
             _CheckpointCount = 0;
             GameObject[] Checkpoints = GameObject.FindGameObjectsWithTag("Checkpoint");
             if (Checkpoints != null)
@@ -51,10 +53,17 @@ namespace PrawnEntertainment.Behaviour
             }
         }
 
+        public void NoMovesAvailable()
+        {
+            _IsNewMovesAvailable = false;
+            HUDMessage.Raise("There are not any moves available.\n Press [SPACE] to restart level");
+        }
+
         public void OnAction()
         {
             if ( _IsEndWasReached && _WereAllCheckpointsPassed ) LoadNextLevel.Raise();
             if ( _IsEndWasReached && !_WereAllCheckpointsPassed ) ReloadLevel.Raise();
+            if ( !_IsNewMovesAvailable ) ReloadLevel.Raise();
         }
     }
 }
