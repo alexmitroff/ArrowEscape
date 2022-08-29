@@ -15,6 +15,9 @@ namespace PrawnEntertainment.Behaviour
             if (IsTest)
             {
                 LoadLevel.Raise("TestMovement");
+            } else {
+                string LevelVariant = Random.Range(1,3).ToString("00");
+                LoadLevel.Raise($"Lvl.01.{LevelVariant}");
             }
         }
     }

@@ -39,6 +39,13 @@ namespace PrawnEntertainment.Behaviour
                 RestartLevel();
                 return;
             }
+            string LevelVariant = Random.Range(1,3).ToString("00");
+            int LevelNumber = int.Parse(scene_name.Split('.')[1]);
+            LevelNumber++;
+            if (LevelNumber > 10) LevelNumber = 1;
+            string LevelNumberString = LevelNumber.ToString("00");
+            UnloadScene(scene_name);
+            LoadScene($"Lvl.{LevelNumberString}.{LevelVariant}");
         }
 
     }
