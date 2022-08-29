@@ -108,7 +108,7 @@ Material:
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
     - _ENUM: 0
-    - _Emission: 0.5
+    - _Emission: 1.5
     - _EnvironmentReflections: 1
     - _GlossMapScale: 0
     - _Glossiness: 0
