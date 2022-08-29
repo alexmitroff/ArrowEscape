@@ -5,17 +5,16 @@ using PrawnEntertainment.Events;
 
 namespace PrawnEntertainment.Behaviour
 {
-    public class BehaviourHUDMessage : MonoBehaviour
+    public class BehaviourHint : MonoBehaviour
     {
         public TextMeshProUGUI TextArea;
-
         void Start()
         {
-            TextArea.text = "";
+            TextArea.enabled = false;
         }
-        public void OnMessageRecieved(string message)
+        public void OnShowHint()
         {
-            TextArea.text = message;
+            TextArea.enabled = true;
         }
     }
 }
