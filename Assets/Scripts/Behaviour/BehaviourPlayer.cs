@@ -46,10 +46,10 @@ namespace PrawnEntertainment.Behaviour
             if (_WereAllCheckpointsPassed)
             {
                 Debug.Log("The end was reached!");
-                HUDMessage.Raise("Press [SPACE] to load next level");
+                HUDMessage.Raise("Level is complete!\nPress [SPACE] to load next level");
             } else {
                 Debug.Log("You need to pass through all checkpoints");
-                HUDMessage.Raise("You need to pass through all checkpoints.\n Press [SPACE] to restart level");
+                HUDMessage.Raise("You need to pass through all checkpoints.\nPress [SPACE] to restart level");
             }
         }
 
