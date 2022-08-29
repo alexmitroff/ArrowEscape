@@ -10,6 +10,7 @@ namespace PrawnEntertainment.Behaviour
         public SO_SimpleEvent LoadNextLevel;
         public SO_SimpleEvent ReloadLevel;
         public SO_StringEvent HUDMessage;
+        public SO_SimpleEvent ShowHint;
         int _CheckpointCount;
         bool _IsNewMovesAvailable;
         bool _IsEndWasReached;
@@ -21,7 +22,9 @@ namespace PrawnEntertainment.Behaviour
             _IsNewMovesAvailable = true;
             _CheckpointCount = 0;
             GameObject[] Checkpoints = GameObject.FindGameObjectsWithTag("Checkpoint");
-            if (Checkpoints != null)
+            Debug.Log($"Level contains {Checkpoints.Length} checkpoints.");
+            Debug.Log($"All checkpoint passed: {_WereAllCheckpointsPassed}");
+            if (Checkpoints != null && Checkpoints.Length > 0)
             {
                 _WereAllCheckpointsPassed = false;
                 _CheckpointCount = Checkpoints.Length;
@@ -46,17 +49,21 @@ namespace PrawnEntertainment.Behaviour
             if (_WereAllCheckpointsPassed)
             {
                 Debug.Log("The end was reached!");
-                HUDMessage.Raise("Level is complete!\nPress [SPACE] to load next level");
+                HUDMessage.Raise("Level is complete!");
+                ShowHint.Raise();
             } else {
                 Debug.Log("You need to pass through all checkpoints");
-                HUDMessage.Raise("You need to pass through all checkpoints.\nPress [SPACE] to restart level");
+                HUDMessage.Raise("Try again!");
+                ShowHint.Raise();
             }
         }
 
         public void NoMovesAvailable()
         {
             _IsNewMovesAvailable = false;
-            HUDMessage.Raise("There are not any moves available.\n Press [SPACE] to restart level");
+            Debug.Log("No moves available!");
+            HUDMessage.Raise("Try again!");
+            ShowHint.Raise();
         }
 
         public void OnAction()
