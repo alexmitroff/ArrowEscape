@@ -191,10 +191,6 @@ PublishScripts/
 *.nupkg
 # NuGet Symbol Packages
 *.snupkg
-# The packages folder can be ignored because of Package Restore
-**/[Pp]ackages/*
-# except build/, which is used as an MSBuild target.
-!**/[Pp]ackages/build/
 # Uncomment if necessary however generally it will be regenerated when needed
 #!**/[Pp]ackages/repositories.config
 # NuGet v3's project.json files produces more ignorable files
@@ -459,50 +455,3 @@ tags
 
 ### Binary files ###
 *.blend[1-32]
-
-### VehiclePhysics 2 ###
-Assets/NWH/Vehicle Physics 2/_Demo/_Scenes
-Assets/NWH/Vehicle Physics 2/_Demo/_Scenes.meta
-Assets/NWH/Vehicle Physics 2/_Demo/Vehicles
-Assets/NWH/Vehicle Physics 2/_Demo/Vehicles.meta
-
-### EasyRoads3D ###
-Assets/EasyRoads3D/html*
-Assets/EasyRoads3D/images*
-Assets/EasyRoads3D/*.html
-Assets/EasyRoads3D/*.html.meta
-Assets/EasyRoads3D/*.css
-Assets/EasyRoads3D/*.css.meta
-Assets/EasyRoads3D/Beta Release*
-Assets/EasyRoads3D/*.txt
-Assets/EasyRoads3D/*.txt.meta
-
-### NatureManufacture Assets ###
-Assets/NatureManufacture Assets/**/*.tga*
-Assets/NatureManufacture Assets/**/*.png*
-Assets/NatureManufacture Assets/**/*.exr*
-Assets/NatureManufacture Assets/**/*.psd*
-
-Assets/NatureManufacture Assets/Meadow Environment Dynamic Nature/Demo Scenes*
-Assets/NatureManufacture Assets/Meadow Environment Dynamic Nature/HD and URP Support Packs*
-Assets/NatureManufacture Assets/Meadow Environment Dynamic Nature/Third Party Support Files*
-
-Assets/NatureManufacture Assets/**/Third-Party Notices*
-
-### Soviet fences Assets ###
-Assets/Resources/Fences/**/*.tga*
-
-Lightmap*
-
-### AzureSky Materials
-Assets/Azure[Sky] Dynamic Skybox/Materials/Default Rain.mat
-Assets/Azure[Sky] Dynamic Skybox/Materials/Heavy Rain.mat
-Assets/Azure[Sky] Dynamic Skybox/Materials/Ripple.mat
-Assets/Azure[Sky] Dynamic Skybox/Materials/Sky.mat
-Assets/Azure[Sky] Dynamic Skybox/Materials/Snow.mat
-
-### Addressables
-addressables_content_state.bin*
-
-### Terrain
-Assets/Resources/TerrainSampleAssets*
